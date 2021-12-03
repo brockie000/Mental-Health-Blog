@@ -9,20 +9,24 @@ const AboutWidget = () => {
     return (
         <div className='bg-white shadow-2xl rounded-lg p-0 lg:p-8 pb-12 mb-8'>
             <img src={'/alex(1).png'} className='object-contain shadow-lg rounded-lg md:w-full' />
-            <div className='text-center'>
-                Hi, Im Alex
+            <div className='text-center mb-2 mt-2 font-semibold '>
+                Hi, I'm Alex
             </div>
-            <div className='text-center'>
-                Welcome to my mental health blog. if you wouldd like to read more about me click here...
-            </div>
+            <Link href={'/about'}>
+                <div className='text-center transition cursor-pointer duration-500 hover:text-pink-600'>
+                    Welcome to my mental health blog. if you would like to read more about me click here...
+                </div>
+            </Link>
             
             <div className='grid grid-cols-4 place-items-center pt-5'>
+
                 <Link href={'https://www.instagram.com/alexgilbodyx/?hl=en'}>
-                    <InstagramIcon className='cursor-pointer'/>
+                    <InstagramIcon className='cursor-pointer transition duration-500 transfrom hover:-translate-y-1'/>
                 </Link>
-                <FacebookIcon className='cursor-pointer' />
-                <TwitterIcon className='cursor-pointer' />
-                <LinkedInIcon className='cursor-pointer' />
+
+                <FacebookIcon className='cursor-pointer transition duration-500 transfrom hover:-translate-y-1' />
+                <TwitterIcon className='cursor-pointer transition duration-500 transfrom hover:-translate-y-1' />
+                <LinkedInIcon className='cursor-pointer transition duration-500 transfrom hover:-translate-y-1' />
 
             </div>
         </div>
