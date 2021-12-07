@@ -18,7 +18,7 @@ const AboutWidget = () => {
                 </div>
             </Link>
             
-            <div className='grid grid-cols-4 place-items-center pt-5'>
+            <div className='grid grid-cols-4 place-items-center pt-5 px-10'>
 
                 <Link href={'https://www.instagram.com/alexgilbodyx/?hl=en'}>
                     <InstagramIcon className='cursor-pointer transition duration-500 transfrom hover:-translate-y-1'/>

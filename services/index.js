@@ -1,6 +1,6 @@
 import { request, gql } from 'graphql-request';
 
-const graphqlAPI = 'https://api-eu-central-1.graphcms.com/v2/ckwp3nhqk1anj01z1huoyf01q/master'
+const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT
 
 export const getPosts = async () => {
   const query = gql`
@@ -71,4 +71,16 @@ export const getPostDetails = async (slug) => {
     const result = await request(graphqlAPI, query, { slug });
   
     return result.post;
+  };
+
+  export const submitComment = async (obj) => {
+    const result = await fetch('/api/comments', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(obj),
+    });
+  
+    return result.json();
   };

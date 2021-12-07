@@ -10,6 +10,7 @@
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.2.0",
     "@mui/material": "^5.2.2",
+    "env-cmd": "^10.1.0",
     "graphql": "^15.7.2",
     "graphql-request": "^3.6.1",
     "html-react-parser": "^1.4.1",

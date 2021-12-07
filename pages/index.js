@@ -9,10 +9,12 @@ export default function Home({posts}) {
       <Head>
         <title>Mental Health Blog</title>
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2210519429558196"
+        crossorigin="anonymous"></script>
       </Head>
 
-        <div className='text-center font-semibold text-lg border-b mb-5'>
-          Recent Posts
+        <div className='text-center font-semibold border-b mb-5'>
+          <h2>Featured Posts</h2>
         </div>
 
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
@@ -20,10 +22,10 @@ export default function Home({posts}) {
         {posts.map((post) => <PostCard post={post.node} key={post.title}/>)}
         </div>
 
-        <div className="lg:col-span-4 col-span-1">
+        <div className="lg:col-span-4">
           <div className='lg:sticky relative top-8'>
             <AboutWidget />
-            <Categories />
+            
           </div>
       </div>
       </div>
