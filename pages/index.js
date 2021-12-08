@@ -9,8 +9,6 @@ export default function Home({posts}) {
       <Head>
         <title>Mental Health Blog</title>
         <link rel="icon" href="/favicon.ico" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2210519429558196"
-        crossorigin="anonymous"></script>
       </Head>
 
         <div className='text-center font-semibold border-b mb-5'>

@@ -8,11 +8,11 @@ const categories = [
 
 const Header = () => {
     return (
-        <div className='container mx-auto px-1o mb-8'>
-            <div className='border-b w-full inline-block border-blue-400 py-8'>
-                <div className='md:float-left block'>
+        <div className='container mx-auto px-1 mb-8'>
+            <div className='border-b w-full text-center inline-block border-blue-400 py-8'>
+                <div className='block'>
                     <Link href='/'>
-                        <span className='cursor-pointer font-bold text-4xl text-white'>
+                        <span className='cursor-pointer text-center font-bold text-4xl text-white'>
                             Mental Health Guide
 
                         </span>

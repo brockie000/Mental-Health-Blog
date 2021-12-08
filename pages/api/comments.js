@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import {GraphQLClient, gql} from 'graphql-request'
 
-const graphqlAPI = 'https://api-eu-central-1.graphcms.com/v2/ckwp3nhqk1anj01z1huoyf01q/master'
+const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT
 const graphcmsToken = process.env.GRAPHCMS_TOKEN
 
 export default async function comments(req, res) {
