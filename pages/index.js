@@ -8,7 +8,7 @@ export default function Home({posts}) {
     <div className="container mx-auto px-10 mb-8">
       <Head>
         <title>Mental Health Blog</title>
-        <meta name="description" content="Home Page for Alex Gilbody's Blog">
+        <meta name="description" content="Home Page for Alex Gilbody's Blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
