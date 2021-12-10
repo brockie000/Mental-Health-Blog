@@ -8,11 +8,12 @@ export default function Home({posts}) {
     <div className="container mx-auto px-10 mb-8">
       <Head>
         <title>Mental Health Blog</title>
+        <meta name="description" content="Home Page for Alex Gilbody's Blog">
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <div className='text-center font-semibold border-b mb-5'>
-          <h2>Featured Posts</h2>
+        <div className='text-center  border-b mb-5'>
+          <span className='text-3xl text-white'>Featured Posts</span>
         </div>
 
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
@@ -23,6 +24,7 @@ export default function Home({posts}) {
         <div className="lg:col-span-4">
           <div className='lg:sticky relative top-8'>
             <AboutWidget />
+            <Categories />
             
           </div>
       </div>
