@@ -1,10 +1,12 @@
 import Head from 'next/head'
+import Html from 'next/document'
 import AboutWidget from '../components/AboutWidget';
-import { PostCard, Categories, PostWidget} from "../components/index"
+import { PostCard, Categories, PostWidget, SuggestionWidget} from "../components/index"
 import { getPosts } from '../services';
 
 export default function Home({posts}) {
   return (
+    <html lang="en">
     <div className="container mx-auto px-10 mb-8">
       <Head>
         <title>Mental Health Blog</title>
@@ -24,12 +26,13 @@ export default function Home({posts}) {
         <div className="lg:col-span-4">
           <div className='lg:sticky relative top-8'>
             <AboutWidget />
-            <Categories />
+            <SuggestionWidget />
             
           </div>
       </div>
       </div>
     </div>
+    </html>
   )
 }
 
