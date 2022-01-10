@@ -20,6 +20,7 @@ export default function Home({posts}) {
     <Head>
         <title>Mental Health Blog</title>
         <meta name="description" content="Home Page for Alex Gilbody's Blog" />
+        <meta name="google-site-verification" content="EXUAyHR4-xudAVVrmGQbHpwlPcweZ7r0C2qkpMA6-7A" />
         <link rel="icon" href="/favicon.ico" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2210519429558196"
       crossorigin="anonymous"></script>
