@@ -11,15 +11,16 @@ const categories = [
 const Header = () => {
     return (
         <div className='container mx-auto px-1 md:mb-8'>
-            <div className='w-full text-center inline-block px-4  '>
+
+            <div className='w-full text-center  px-4  '>
 
                 <div className='hidden md:float-left md:contents'>
-                    <div className='float-left text-4xl text-white mt-8'>
+                    <div className='float-left text-4xl text-white '>
                     Test
                     </div>
                 </div>
 
-                <div className='md:float-center mt-8 block'>
+                <div className='md:float-center mt-10'>
                     <Link href='/'>
                         <span className='cursor-pointer text-center font-bold text-4xl text-white'>
                             Mental Health Guide
@@ -28,20 +29,20 @@ const Header = () => {
                     </Link>
 
                 </div>
+
+                <div className='float-right bg-pink-300'>
+                <div className='space-between'>
+                    <span className='transition transform duration-1000 cursor-pointer hover:text-white'>Depression</span>
+                    <span className='mx-4'>Anxiety</span>
+                    <span className='mr-4'>Stress</span>
+                    <span className=''>All</span>
+                    </div>
+
+    </div>
                 
 
                 <div className='border-b w-full text-center inline-block border-white-400 py-6 md:py-8'></div>
-                <div className='hidden md:float-center md:contents'>
-                    {categories.map((category) => (
-                        <Link key={category.slug} href={`/category/${category.slug}`} passHref>
-                            <span className="md:float-center mt-2 align-middle text-white ml-4 font-semmibold cursor-pointer">
-                                {category.name}
-
-                            </span>
-                        </Link>
-                    ))}
-
-                </div>
+                
 
             </div>
             
