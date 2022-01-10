@@ -16,13 +16,13 @@ export default function Home({posts}) {
   }
 
   return (
-    <html lang="en">
+    <main>
     <Head>
         <title>Mental Health Blog</title>
         <meta name="description" content="Home Page for Alex Gilbody's Blog" />
         <link rel="icon" href="/favicon.ico" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2210519429558196"
-        crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script>
       </Head>
 
       <Navbar />
@@ -55,7 +55,7 @@ export default function Home({posts}) {
 
       </div>
     </div>
-    </html>
+    </main>
   )
 }
 

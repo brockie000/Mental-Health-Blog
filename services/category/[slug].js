@@ -1,4 +1,5 @@
-import React from 'react';
+/*import React from 'react';
+
 import { useRouter } from 'next/router';
 
 import { getCategories, getCategoryPost } from '../../services';
@@ -53,3 +54,4 @@ export async function getStaticPaths() {
     fallback: true,
   };
 }
+*/
