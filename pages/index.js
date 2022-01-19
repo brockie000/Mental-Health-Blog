@@ -25,20 +25,18 @@ export default function Home({posts}) {
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2210519429558196"
       crossorigin="anonymous"></script>
       </Head>
-
-      <Navbar />
   
     <div className="container mx-auto px-10 mb-8">
-      
 
-      
+        <div className='text-center  border-t mb-5 mt-5'/>
 
-        <div className='text-center  border-t mb-5 mt-5'>
-          <span className='text-3xl text-white'>New Posts</span>
+        <div className='text-center mb-5'>
+        <h1 className='text-3xl text-white'>New Posts</h1>
         </div>
+   
 
       <div className='invisible sm:visible grid grid-cols-1 lg:grid-cols-12 gap-12'>
-        <div className=' lg:col-span-8 col-span-1'>
+        <div className='flex flex-col-reverse lg:col-span-8 col-span-1'>
         {posts.map((post) => <PostCard post={post.node} key={post.title}/>)}
         </div>
 

@@ -31,18 +31,28 @@ const Navbar = () => {
 
             <div className='text-center flex-1'>
                 <Link href='/'>
-                    <span className='cursor-pointer text-center font-bold text-3xl text-white'>
+                    <h1 className='cursor-pointer text-center font-bold text-3xl text-white'>
                         Mental Health Guide
-                    </span>
+                    </h1>
                 </Link>
             </div>
 
             <div className='invisible md:visible mr-10 flex-1' >
                 <div className='mt-1 float-right space-between mr-10'>
-                    <span className='transition transform duration-500 cursor-pointer hover:text-white'>Depression</span>
-                    <span className='mx-4'>Anxiety</span>
-                    <span className='mr-4'>Stress</span>
-                    <span className=''>All</span>
+                    <Link href='/category/depression'>
+                        <a href='/category/depression'>
+                            <span className='transition transform duration-500 cursor-pointer hover:text-white'>Depression</span>
+                        </a>
+                    </Link>
+                    <Link href='/category/anxiety'>
+                        <span className='mx-4 transition transform duration-500 cursor-pointer hover:text-white'>Anxiety</span>
+                    </Link>
+                    <Link href='/category/stress'>
+                        <span className='mr-4 transition transform duration-500 cursor-pointer hover:text-white'>Stress</span>
+                    </Link>
+                    <Link href='/category/all'>
+                        <span className='transition transform duration-500 cursor-pointer hover:text-white'>All</span>
+                    </Link>
                 </div>
             </div>
 
