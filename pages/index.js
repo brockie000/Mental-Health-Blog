@@ -31,7 +31,7 @@ export default function Home({posts}) {
         <div className='text-center  border-t mb-5 mt-5'/>
 
         <div className='text-center mb-5'>
-        <h1 className='text-3xl text-white'>New Posts</h1>
+        <span className='text-3xl text-white'>New Posts</span>
         </div>
    
 

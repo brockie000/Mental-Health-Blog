@@ -10,10 +10,12 @@ const Navbar = () => {
         <div className='mt-10 mb-10 p-4 ml-12 flex'>
 
             <div className='flex-1 flex ml-12 place-items-left'>
-            <Link href={'https://www.instagram.com/alexgilbodyx/?hl=en'}>
+                <Link href={'https://www.instagram.com/alexgilbodyx/?hl=en'}>
+                <a href='https://www.instagram.com/alexgilbodyx/?hl=en'>
                     <div className='cursor-pointer transition duration-500 transform hover:-translate-y-1 pr-9'>
                     <InstagramIcon />
                     </div>
+                </a>
                 </Link>
 
                 <div className='cursor-pointer transition duration-500 transform hover:-translate-y-1 pr-9'>
@@ -32,7 +34,7 @@ const Navbar = () => {
             <div className='text-center flex-1'>
                 <Link href='/'>
                     <h1 className='cursor-pointer text-center font-bold text-3xl text-white'>
-                        Mental Health Guide
+                        Mental Health Guide By Alex Gilbody
                     </h1>
                 </Link>
             </div>
@@ -45,13 +47,19 @@ const Navbar = () => {
                         </a>
                     </Link>
                     <Link href='/category/anxiety'>
+                        <a href='/category/depression'>
                         <span className='mx-4 transition transform duration-500 cursor-pointer hover:text-white'>Anxiety</span>
+                        </a>
                     </Link>
                     <Link href='/category/stress'>
+                        <a href='/category/depression'>
                         <span className='mr-4 transition transform duration-500 cursor-pointer hover:text-white'>Stress</span>
+                        </a>
                     </Link>
                     <Link href='/category/all'>
+                        <a href='/category/depression'>
                         <span className='transition transform duration-500 cursor-pointer hover:text-white'>All</span>
+                        </a>
                     </Link>
                 </div>
             </div>
